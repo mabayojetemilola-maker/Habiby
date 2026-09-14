@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>For Basheerah — From Ayanfe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENVELOPE -->
+  <section class="screen active" id="envelopeScreen">
+    <div class="envelope-wrap">
+      <div class="sealed-label">Sealed with love</div>
+      <div class="envelope" id="envelope" role="button" tabindex="0">
+        <div class="wax"><span>B</span></div>
+      </div>
+      <div class="tap-hint">Tap to open</div>
+    </div>
+  </section>
+
+  <!-- LOCK -->
+  <section class="screen" id="lockScreen">
+    <div class="lock-wrap">
+      <h2>For Basheerah</h2>
+      <p class="sub">Enter the date that marks one year of this journey</p>
+      <div class="date-display" id="dateDisplay">
+        <span class="slot">_</span><span class="slot">_</span>
+        <span> / </span>
+        <span class="slot">_</span><span class="slot">_</span>
+        <span> / </span>
+        <span class="slot">_</span><span class="slot">_</span>
+      </div>
+      <div class="pad" id="pad">
+        <button type="button" data-n="1">1</button>
+        <button type="button" data-n="2">2</button>
+        <button type="button" data-n="3">3</button>
+        <button type="button" data-n="4">4</button>
+        <button type="button" data-n="5">5</button>
+        <button type="button" data-n="6">6</button>
+        <button type="button" data-n="7">7</button>
+        <button type="button" data-n="8">8</button>
+        <button type="button" data-n="9">9</button>
+        <button type="button" data-n="clear">⌫</button>
+        <button type="button" data-n="0">0</button>
+        <button type="button" data-n="ok">✓</button>
+      </div>
+      <p class="lock-error" id="lockError">That is not the date, beloved.</p>
+    </div>
+  </section>
+
+  <!-- STORY PAGES -->
+  <section class="screen" id="storyScreen">
+    <div class="pages" id="pages">
+
+      <!-- 0 Title -->
+      <div class="page active" data-i="0">
+        <div class="page-inner">
+          <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+          <div class="when">A letter for you</div>
+          <h2>My Ayanfe</h2>
+          <div class="names-big">From Basheerah, with love</div>
+          <p class="center" style="margin-top:12px;color:var(--muted);">For the sake of Allah · From my heart to yours</p>
+          <div class="polaroid" style="margin-top:24px;">
+            <img src="basheerah-1.jpg" alt="Basheerah">
+            <div class="cap">Me · Basheerah</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 Beginning -->
+      <div class="page" data-i="1">
+        <div class="page-inner">
+          <div class="when">The beginning</div>
+          <h2>When you first saw me</h2>
+          <p>You were my mother’s student. I only came to greet her at school — a simple visit, a simple salaam.</p>
+          <p>But Allah writes stories in the smallest moments. You saw me. And something quiet and real began to grow in your heart… and later, in mine.</p>
+        </div>
+      </div>
+
+      <!-- 2 Confession chat -->
+      <div class="page" data-i="2">
+        <div class="page-inner">
+          <div class="when">The confession</div>
+          <h2>When you told me</h2>
+          <div class="chat">
+            <div class="bubble">
+              <div class="from">You · Ayanfe</div>
+              DEAREST BASHEERAH, I have gotten this kind of big feelings for you 😌.<br><br>
+              The feeling is love, and it’s nothing if not reciprocal.<br>
+              I hereby seek and plead to know your interest in me Adeshewa 🥺🙏
+            </div>
+          </div>
+          <p style="margin-top:8px;">You chose honesty — carefully, respectfully. You were afraid of spoiling the trust my mum had in you. That care meant a lot to me.</p>
+        </div>
+      </div>
+
+      <!-- 3 Nervous about mum -->
+      <div class="page" data-i="3">
+        <div class="page-inner">
+          <div class="when">Your fear</div>
+          <h2>Before you were sure</h2>
+          <div class="chat">
+            <div class="bubble">
+              <div class="from">You · Ayanfe</div>
+              I intended on telling Mum that I have a kind of feelings for Basheerah 😌…<br><br>
+              I don’t want to put myself bad in front of mum 😔… I know she likes me and took me like her son.<br><br>
+              I don’t want to do something that would spoil my relationship with mum.<br>
+              And Basheerah is a small.. Young lady. I don’t even know what she feels.<br><br>
+              I don’t want to be an idiot in the front of those that are proud of me. 😔
+            </div>
+          </div>
+          <p style="margin-top:8px;">I see now how carefully you held your heart. You respected my mum. You respected me. That is why I trust you.</p>
+        </div>
+      </div>
+
+      <!-- 4 Poem -->
+      <div class="page" data-i="4">
+        <div class="page-inner">
+          <div class="when">Words you gave me</div>
+          <h2>The Light in My Days</h2>
+          <p class="center" style="margin-bottom:10px;">You wrote this for me. I kept every line.</p>
+          <div class="chat">
+            <div class="bubble poem-b">
+              <div class="from">From you · To me</div>
+              In quiet moments, your name appears,<br>
+              Soft as a whisper, calming my fears.<br>
+              Like dawn’s first light after longest night,<br>
+              You turn my darkness into light.<br><br>
+              Your smile a peace I never knew,<br>
+              Your words a balm, gentle and true.<br>
+              In every prayer, your name takes place,<br>
+              A blessing wrapped in love and grace.<br><br>
+              Not just my love.. you’re my best friend,<br>
+              A bond I pray will never end.<br>
+              With you, life’s path feels calm and clear,<br>
+              Forever starts when you are near.<br><br>
+              <span style="font-style:normal;color:#c4a574;">AYANFE ♥</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Care messages -->
+      <div class="page" data-i="5">
+        <div class="page-inner">
+          <div class="when">Everyday love</div>
+          <h2>How you care for me</h2>
+          <div class="chat">
+            <div class="bubble">
+              <div class="from">You</div>
+              My own 🫂❤️<br><br>
+              Take care of yourself for me.<br>
+              May Allah take good care of you.
+            </div>
+            <div class="bubble">
+              I love the woman you’re becoming 🤭😍
+            </div>
+          </div>
+          <p style="margin-top:8px;">These small messages hold me. May Allah take good care of you too, my Ayanfe.</p>
+          <div class="polaroid right">
+            <img src="ayanfe-1.jpg" alt="Abdulhameed">
+            <div class="cap">You · Abdulhameed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Birthday -->
+      <div class="page" data-i="6">
+        <div class="page-inner">
+          <div class="when">My 20th birthday</div>
+          <h2>What you wrote to me</h2>
+          <div class="chat">
+            <div class="bubble">
+              <div class="from">You · On my birthday</div>
+              My Dearest Basheerah Adeshewa Wuraola 💛<br><br>
+              Today, my heart overflows with gratitude… You are not just my fiancée; you are my best friend, my confidant, my source of strength, and one of Allah’s greatest blessings in my life.<br><br>
+              I pray that Allah grants you a long life filled with happiness, good health, success, and endless blessings.<br><br>
+              I love you more than words can ever express, today and always. ❤️🎂<br><br>
+              Forever Yours, Ayanfe ♥
+            </div>
+          </div>
+          <p style="margin-top:8px;">I read this and felt chosen — not only loved, but prayed for.</p>
+        </div>
+      </div>
+
+      <!-- 7 Photos -->
+      <div class="page" data-i="7">
+        <div class="page-inner">
+          <div class="when">Us</div>
+          <h2>Me &amp; you</h2>
+          <div class="polaroid">
+            <img src="basheerah-2.jpg" alt="Basheerah">
+            <div class="cap">Me</div>
+          </div>
+          <div class="polaroid right">
+            <img src="ayanfe-2.jpg" alt="Abdulhameed">
+            <div class="cap">You</div>
+          </div>
+          <p class="center" style="margin-top:8px;">Two hearts learning to walk toward the same home, insha’Allah.</p>
+        </div>
+      </div>
+
+      <!-- 8 One year -->
+      <div class="page" data-i="8">
+        <div class="page-inner">
+          <div class="when">One year</div>
+          <h2>22 · 09 · 25</h2>
+          <p class="center">This date is not only a number to me.</p>
+          <p class="center">It marks how long my heart has known yours — with patience, with intention, with respect for family, with fear of Allah, and with hope for a home built on deen.</p>
+          <div class="chat" style="margin-top:16px;">
+            <div class="bubble">
+              <div class="from">A note I kept</div>
+              Dec 22.. will be 3 months, when Ayanfe confessed how he felt towards Adeshewa
+            </div>
+          </div>
+          <p class="center" style="margin-top:10px;">And still, I choose you.</p>
+        </div>
+      </div>
+
+      <!-- 9 Final -->
+      <div class="page final-bg" data-i="9">
+        <div class="page-inner">
+          <h2>Toward forever, insha’Allah</h2>
+          <p>This is not the end of our story.</p>
+          <p>It is my dua — that Allah joins what He has begun between us, that He makes our hearts steadfast, and that He writes marriage for you and me in the best of ways.</p>
+          <p style="margin-top:14px;">I love you for the sake of Allah. With patience. With honour.</p>
+          <p style="margin-top:10px;">Yours, Basheerah</p>
+          <div class="dua">آمِينَ يَا رَبَّ الْعَالَمِينَ</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="nav-bar" id="navBar">
+      <div class="dots" id="dots"></div>
+      <div class="swipe-hint">Swipe or use buttons</div>
+      <div class="nav-btns">
+        <button type="button" id="prevBtn">Back</button>
+        <button type="button" class="next-btn" id="nextBtn">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var envelopeScreen = document.getElementById('envelopeScreen');
+      var lockScreen = document.getElementById('lockScreen');
+      var storyScreen = document.getElementById('storyScreen');
+      var envelope = document.getElementById('envelope');
+      var navBar = document.getElementById('navBar');
+      var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+      var dotsEl = document.getElementById('dots');
+      var prevBtn = document.getElementById('prevBtn');
+      var nextBtn = document.getElementById('nextBtn');
+      var total = pages.length;
+      var current = 0;
+
+      function showScreen(s) {
+        [envelopeScreen, lockScreen, storyScreen].forEach(function (x) {
+          x.classList.remove('active');
+        });
+        s.classList.add('active');
+      }
+
+      envelope.addEventListener('click', function () { showScreen(lockScreen); });
+
+      // dots
+      for (var d = 0; d < total; d++) {
+        var sp = document.createElement('span');
+        if (d === 0) sp.className = 'on';
+        dotsEl.appendChild(sp);
+      }
+      var dots = dotsEl.querySelectorAll('span');
+
+      function goTo(i) {
+        if (i < 0 || i >= total) return;
+        pages[current].classList.remove('active');
+        current = i;
+        pages[current].classList.add('active');
+        pages[current].scrollTop = 0;
+        dots.forEach(function (dot, k) {
+          dot.classList.toggle('on', k === current);
+        });
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current === total - 1;
+        nextBtn.textContent = current === total - 1 ? 'End' : 'Next';
+      }
+
+      prevBtn.addEventListener('click', function () { goTo(current - 1); });
+      nextBtn.addEventListener('click', function () { goTo(current + 1); });
+
+      // swipe
+      var startX = 0, startY = 0;
+      var pagesEl = document.getElementById('pages');
+      pagesEl.addEventListener('touchstart', function (e) {
+        startX = e.changedTouches[0].clientX;
+        startY = e.changedTouches[0].clientY;
+      }, { passive: true });
+      pagesEl.addEventListener('touchend', function (e) {
+        var dx = e.changedTouches[0].clientX - startX;
+        var dy = e.changedTouches[0].clientY - startY;
+        if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+        if (dx < 0) goTo(current + 1);
+        else goTo(current - 1);
+      }, { passive: true });
+
+      // lock 22/09/25
+      var correct = ['2','2','0','9','2','5'];
+      var entered = [];
+      var slots = document.querySelectorAll('.date-display .slot');
+      var err = document.getElementById('lockError');
+
+      function render() {
+        slots.forEach(function (slot, i) {
+          slot.textContent = entered[i] != null ? entered[i] : '_';
+        });
+      }
+
+      function openStory() {
+        showScreen(storyScreen);
+        navBar.classList.add('show');
+        goTo(0);
+      }
+
+      function check() {
+        if (entered.length < 6) return;
+        var ok = entered.every(function (d, i) { return d === correct[i]; });
+        if (ok) {
+          err.classList.remove('show');
+          openStory();
+        } else {
+          err.classList.add('show');
+          entered = [];
+          render();
+          setTimeout(function () { err.classList.remove('show'); }, 2000);
+        }
+      }
+
+      document.getElementById('pad').addEventListener('click', function (e) {
+        var btn = e.target.closest('button');
+        if (!btn) return;
+        var n = btn.getAttribute('data-n');
+        if (n === 'clear') { entered.pop(); render(); return; }
+        if (n === 'ok') { check(); return; }
+        if (entered.length >= 6) return;
+        entered.push(n);
+        render();
+        if (entered.length === 6) setTimeout(check, 180);
+      });
+    })();
+  </script>
+</body>
+</html>
